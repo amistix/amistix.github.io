@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Clippy</title>
+    </head>
+    <body bgcolor="#EEEEEE">
+        <center>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img width="150px" src="media/gifs/clippy-white-6.gif">
+                        </td>
+                        <td align="CENTER">
+                            <p><a href="https://github.com/amistix">amistix</a> - homepage</p>
+                            [ <a href="/">Home</a> 
+                            [ <a href="/task">Task</a> 
+                            [ <a href="/dreamteam">DreamTeam</a> 
+                            | <a href="/archive">Archive</a> 
+                            | <a href="/posts">Posts</a> 
+                            | <a href="/cv">CV</a> 
+                            | <a href="/etc">Et cetera</a> ]
+                        <td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table border="1" id="table" align="center">
+                                <tbody id="tbody">
+                                    <tr>
+                                        <th colspan="11">Varian 2</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <hr>
+        </center>
+		<script>
+			let table = document.getElementById('tbody');
+			let row = document.createElement('tr');
+
+			for (let j = 0; j < 11; j++) {
+				let col = document.createElement('td');
+				col.innerText = (j == 0) ? " " : 10*(j+11);
+				row.append(col);
+			}
+
+			table.append(row);
+			for (let i = 0; i < 10; i++) {
+				let row = document.createElement('tr');
+				for (let j = 0; j < 11; j++) {
+					let col = document.createElement('td');
+					col.innerText = (j == 0) ? 7*(i+2) : 7*(i+2)*10*(j+11);
+					row.append(col);
+				}
+				table.append(row);
+			}
+		</script>
+    </body>
+</html>
