@@ -48,7 +48,7 @@
 
 			for (let j = 0; j < 11; j++) {
 				let col = document.createElement('td');
-				col.innerText = (j == 0) ? " " : 10*(j+11);
+				col.innerText = (j == 0) ? " " : 10*(j+10);
 				row.append(col);
 			}
 
@@ -57,7 +57,7 @@
 				let row = document.createElement('tr');
 				for (let j = 0; j < 11; j++) {
 					let col = document.createElement('td');
-					col.innerText = (j == 0) ? 7*(i+2) : 7*(i+2)*10*(j+11);
+					col.innerText = (j == 0) ? 7*(i+2) : 7*(i+2)*10*(j+10);
 					row.append(col);
 				}
 				table.append(row);
